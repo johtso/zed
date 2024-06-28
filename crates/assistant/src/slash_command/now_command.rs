@@ -54,7 +54,7 @@ impl SlashCommand for NowSlashCommand {
             sections: vec![SlashCommandOutputSection {
                 range,
                 icon: IconName::CountdownTimer,
-                label: now.to_rfc3339().into(),
+                label: now.to_rfc2822().into(),
             }],
             run_commands_in_text: false,
         }))
